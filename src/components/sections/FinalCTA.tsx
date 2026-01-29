@@ -98,7 +98,7 @@ export default function FinalCTA() {
                         variants={fadeInUp}
                         className="text-lg sm:text-xl text-purple-100 max-w-2xl mx-auto mb-10 leading-relaxed"
                     >
-                        Join 50,000+ students who transformed homework into epic adventures.
+                        Join students everywhere who transformed homework into epic adventures.
                         No credit card required. Start learning for free today!
                     </motion.p>
 
@@ -143,33 +143,7 @@ export default function FinalCTA() {
                         </motion.button>
                     </motion.div>
 
-                    {/* Trust indicators */}
-                    <motion.div
-                        variants={fadeInUp}
-                        className="flex flex-wrap items-center justify-center gap-6 text-purple-100"
-                    >
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-300">✓</span>
-                            <span>Free 7-Day Trial</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-300">✓</span>
-                            <span>No Credit Card</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-300">✓</span>
-                            <span>Cancel Anytime</span>
-                        </div>
-                    </motion.div>
 
-                    {/* App store badges */}
-                    <motion.div
-                        variants={fadeInUp}
-                        className="mt-12 flex flex-wrap items-center justify-center gap-4"
-                    >
-                        <AppStoreBadge type="apple" />
-                        <AppStoreBadge type="google" />
-                    </motion.div>
                 </motion.div>
             </div>
 

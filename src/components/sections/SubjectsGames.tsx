@@ -11,7 +11,6 @@ const subjects = [
         description: "Master numbers, algebra & geometry through exciting puzzle games!",
         icon: "🔢",
         color: "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
-        games: 45,
         skills: ["Addition", "Fractions", "Geometry"],
     },
     {
@@ -20,7 +19,6 @@ const subjects = [
         description: "Explore physics, chemistry & biology with interactive experiments!",
         icon: "🔬",
         color: "linear-gradient(135deg, #10B981 0%, #059669 100%)",
-        games: 38,
         skills: ["Experiments", "Nature", "Space"],
     },
     {
@@ -29,7 +27,6 @@ const subjects = [
         description: "Build vocabulary, grammar & reading skills through word adventures!",
         icon: "📚",
         color: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
-        games: 52,
         skills: ["Reading", "Writing", "Grammar"],
     },
     {
@@ -38,7 +35,6 @@ const subjects = [
         description: "Travel through history, geography & civics in immersive quests!",
         icon: "🌍",
         color: "linear-gradient(135deg, #F97316 0%, #EA580C 100%)",
-        games: 35,
         skills: ["History", "Geography", "Civics"],
     },
 ];
@@ -112,10 +108,10 @@ export default function SubjectsGames() {
                     transition={{ delay: 0.8, duration: 0.6 }}
                     className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
                 >
-                    <StatCard number="170+" label="Fun Games" icon="🎮" />
-                    <StatCard number="1000+" label="Lessons" icon="📝" />
-                    <StatCard number="500+" label="Quests" icon="🗺️" />
-                    <StatCard number="50+" label="Achievements" icon="🏅" />
+                    <StatCard number="Many" label="Fun Games" icon="🎮" />
+                    <StatCard number="Growing" label="Lessons" icon="📝" />
+                    <StatCard number="Epic" label="Quests" icon="🗺️" />
+                    <StatCard number="Unlockable" label="Achievements" icon="🏅" />
                 </motion.div>
             </div>
         </section>
@@ -128,7 +124,6 @@ function SubjectCard({
     description,
     icon,
     color,
-    games,
     skills,
     index,
 }: {
@@ -136,7 +131,6 @@ function SubjectCard({
     description: string;
     icon: string;
     color: string;
-    games: number;
     skills: string[];
     index: number;
 }) {
@@ -230,7 +224,7 @@ function SubjectCard({
                 style={{ background: color }}
             >
                 <span>🎮</span>
-                <span>{games}+ Games</span>
+                <span>Play Now</span>
             </div>
 
             {/* Hover sparkle */}

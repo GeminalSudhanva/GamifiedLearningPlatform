@@ -126,7 +126,7 @@ export default function Hero() {
                     >
                         <span className="text-lg">🎉</span>
                         <span className="text-sm font-semibold text-gray-700">
-                            Trusted by 50,000+ Students
+                            Trusted by Students Everywhere
                         </span>
                     </motion.div>
 
@@ -163,24 +163,7 @@ export default function Hero() {
                         </Button>
                     </motion.div>
 
-                    {/* Trust indicators */}
-                    <motion.div
-                        variants={fadeInUp}
-                        className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500"
-                    >
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-500">✓</span>
-                            <span>Free 7-Day Trial</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-500">✓</span>
-                            <span>No Credit Card Required</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-green-500">✓</span>
-                            <span>Curriculum Aligned</span>
-                        </div>
-                    </motion.div>
+
                 </motion.div>
             </div>
 

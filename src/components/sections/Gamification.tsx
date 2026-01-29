@@ -18,11 +18,11 @@ const badges = [
 ];
 
 const leaderboard = [
-    { rank: 1, name: "Alex R.", xp: 12450, avatar: "🦊" },
-    { rank: 2, name: "Maya S.", xp: 11820, avatar: "🐱" },
-    { rank: 3, name: "Jake T.", xp: 11540, avatar: "🐶" },
-    { rank: 4, name: "Emma L.", xp: 10890, avatar: "🐰" },
-    { rank: 5, name: "You", xp: 9750, avatar: "🦉", isUser: true },
+    { rank: 1, name: "Player 1", xp: "Top", avatar: "🦊" },
+    { rank: 2, name: "Player 2", xp: "High", avatar: "🐱" },
+    { rank: 3, name: "Player 3", xp: "Great", avatar: "🐶" },
+    { rank: 4, name: "Player 4", xp: "Good", avatar: "🐰" },
+    { rank: 5, name: "You", xp: "Rising", avatar: "🦉", isUser: true },
 ];
 
 export default function Gamification() {
@@ -135,7 +135,7 @@ export default function Gamification() {
                                 </h3>
                                 <div className="flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-2 rounded-full">
                                     <span className="text-lg">⭐</span>
-                                    <span className="font-bold text-gray-900">Level 12</span>
+                                    <span className="font-bold text-gray-900">Level Up!</span>
                                 </div>
                             </div>
 
@@ -143,7 +143,7 @@ export default function Gamification() {
                             <div className="mb-6">
                                 <div className="flex justify-between text-sm text-purple-200 mb-2">
                                     <span>XP to next level</span>
-                                    <span>9,750 / 10,500</span>
+                                    <span>Progress</span>
                                 </div>
                                 <div className="h-4 bg-white/10 rounded-full overflow-hidden">
                                     <motion.div
@@ -157,9 +157,9 @@ export default function Gamification() {
 
                             {/* Stats */}
                             <div className="grid grid-cols-3 gap-4">
-                                <StatBox label="Total XP" value={<AnimatedCounter target={9750} />} icon="⚡" />
-                                <StatBox label="Streak" value="15 days" icon="🔥" />
-                                <StatBox label="Quests" value="47" icon="📜" />
+                                <StatBox label="Total XP" value="Earn" icon="⚡" />
+                                <StatBox label="Streak" value="Keep Going" icon="🔥" />
+                                <StatBox label="Quests" value="Complete" icon="📜" />
                             </div>
                         </motion.div>
 
@@ -185,7 +185,7 @@ export default function Gamification() {
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-2">
                                         <span className="text-3xl">🏆</span>
-                                        <span className="text-white font-bold">+500 XP</span>
+                                        <span className="text-white font-bold">Bonus XP</span>
                                     </div>
                                     <motion.div
                                         className="bg-white/20 px-4 py-2 rounded-full text-white font-semibold"
@@ -269,7 +269,7 @@ export default function Gamification() {
                                             <div className="text-white font-semibold">{player.name}</div>
                                         </div>
                                         <div className="text-yellow-400 font-bold">
-                                            {player.xp.toLocaleString()} XP
+                                            {player.xp}
                                         </div>
                                     </motion.div>
                                 ))}

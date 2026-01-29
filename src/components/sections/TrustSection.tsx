@@ -20,7 +20,7 @@ const features = [
     {
         icon: "🧠",
         title: "Proven Learning Outcomes",
-        description: "Students show 40% improvement in subject understanding within the first 3 months.",
+        description: "Students show significant improvement in subject understanding within the first months.",
         color: "#F97316",
     },
     {
@@ -44,10 +44,10 @@ const features = [
 ];
 
 const stats = [
-    { number: "97%", label: "Parent Satisfaction" },
-    { number: "2M+", label: "Lessons Completed" },
-    { number: "40%", label: "Grade Improvement" },
-    { number: "4.9★", label: "App Store Rating" },
+    { number: "High", label: "Parent Satisfaction" },
+    { number: "Many", label: "Lessons Completed" },
+    { number: "Real", label: "Grade Improvement" },
+    { number: "Top", label: "App Store Rating" },
 ];
 
 export default function TrustSection() {
@@ -85,7 +85,7 @@ export default function TrustSection() {
                         variants={fadeInUp}
                         className="text-lg text-gray-600 max-w-2xl mx-auto"
                     >
-                        We take education seriously while making it fun. Here&apos;s why thousands of parents and teachers choose us.
+                        We take education seriously while making it fun. Here&apos;s why parents and teachers choose us.
                     </motion.p>
                 </motion.div>
 
@@ -157,8 +157,7 @@ export default function TrustSection() {
                     className="mt-12 flex flex-wrap items-center justify-center gap-8"
                 >
                     <TrustBadge icon="🛡️" text="COPPA Compliant" />
-                    <TrustBadge icon="✅" text="NCERT Aligned" />
-                    <TrustBadge icon="🏆" text="EdTech Award 2025" />
+                    <TrustBadge icon="✅" text="Curriculum Aligned" />
                     <TrustBadge icon="🔐" text="SSL Secured" />
                 </motion.div>
             </div>
